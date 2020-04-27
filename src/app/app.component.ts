@@ -19,11 +19,9 @@ export class AppComponent {
   public lineChartColors: Color[] = [
     {
       borderColor: 'black',
-      backgroundColor: 'rgba(255,0,0,0.3)',
+      backgroundColor: 'rgb(239,208,111)',
     },
   ];
-  public lineChartLegend = false;
   public lineChartType = 'line';
-  public lineChartPlugins = [];
 
 }

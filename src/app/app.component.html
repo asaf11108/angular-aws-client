@@ -1,10 +1,21 @@
 <div class="container">
   <h1 class="title">Gold and Silver Prices - 100 Year Historical Charts</h1>
-  <div class="chart">
-    <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
-      [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins">
-    </canvas>
-  </div>
+  <mat-tab-group class="tabs">
+    <mat-tab label="Gold"> 
+      <div class="chart">
+        <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+          [colors]="lineChartColors" [legend]="false" [chartType]="lineChartType">
+        </canvas>
+      </div>
+    </mat-tab>
+    <mat-tab label="Silver">
+      <div class="chart">
+        <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+          [colors]="lineChartColors" [legend]="false" [chartType]="lineChartType">
+        </canvas>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
   <div class="footer">
     <h4 class="repositories"><img src="assets/github-logo.png">Github repositories:&nbsp;<a href="">Client</a>,&nbsp;<a href="">Server</a></h4>
     <div class="coins"><img src="assets/gold-silver-coins.png"></div>
