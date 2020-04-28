@@ -3,14 +3,14 @@
   <mat-tab-group class="tabs">
     <mat-tab label="Gold"> 
       <div class="chart">
-        <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+        <canvas baseChart [datasets]="goldData" [labels]="goldLabels" [options]="lineChartOptions"
           [colors]="lineChartColors" [legend]="false" [chartType]="lineChartType">
         </canvas>
       </div>
     </mat-tab>
     <mat-tab label="Silver">
       <div class="chart">
-        <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+        <canvas baseChart [datasets]="silverData" [labels]="silverLabels" [options]="lineChartOptions"
           [colors]="lineChartColors" [legend]="false" [chartType]="lineChartType">
         </canvas>
       </div>
