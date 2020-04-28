@@ -31,10 +31,16 @@ export class AppComponent implements OnInit {
     responsive: true,
     maintainAspectRatio: false
   };
-  lineChartColors: Color[] = [
+  goldColors: Color[] = [
     {
       borderColor: 'black',
       backgroundColor: 'rgb(239,208,111)',
+    },
+  ];
+  silverColors: Color[] = [
+    {
+      borderColor: 'black',
+      backgroundColor: 'rgb(192,192,192)',
     },
   ];
   lineChartType = 'line';
